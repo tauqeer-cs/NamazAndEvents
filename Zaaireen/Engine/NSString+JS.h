@@ -1,0 +1,87 @@
+//
+//  NSString+JS.h
+//
+//
+//  Created by William Falcon on 1/5/14.
+//  Copyright (c) 2014 William Falcon. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+
+@interface NSString (JS)
+
+-(int)indexOfString:(NSString *)string;
+
+
+
+
+-(int)lastIndexOfString:(NSString *)string;
+
+
+
+/*
+ Splits a string into an array of substrings
+ */
+-(NSArray *)splitOnChar:(char)ch;
+
+/*
+ Splits a string into an array of substrings
+ */
+-(NSArray *)splitOnString:(NSString *)string;
+
+/*
+ Extracts part of a string, beginning at the character at the specified position, and returns the specified number of characters
+ */
+-(NSString *)substringFrom:(NSInteger)from to:(NSInteger)to;
+
+
+
+/*
+ Extracts part of a string, from beginning to the beginning of the input string.
+ Returns null if not found.
+ */
+-(NSString *)substringToString:(NSString*)ch;
+
+
+
+/*
+ Extracts part of a string, from end to the beginning of the input string.
+ Returns null if not found.
+ */
+-(NSString *)substringFromString:(NSString*)ch;
+
+
+
+/*
+ Joins two or more strings, and returns a copy of the joined strings
+ */
+-(NSString *)concat:(NSString *)string;
+
+
+
+/*
+ Removes whitespace from both ends of a string
+ */
+-(NSString *)trim;
+
+
+
+/*
+ Returns yes if string consists of only white spaces
+ */
+-(BOOL)isBlank;
+
+
+
+/*
+ Returns yes if string contains input string
+ */
+-(BOOL)contains:(NSString *)string;
+
+
+/*
+ Replaces each substring of this string that matches the given regular expression with the given replacement (This is from Java String)
+ */
+-(NSString *)replaceAll:(NSString *)regex replacement:(NSString *)replacement;
+
+@end

@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="If2-KF-ADP">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--First Initial Downloads View Controller-->
+        <scene sceneID="ILU-wd-ikp">
+            <objects>
+                <viewController restorationIdentifier="FirstInitialDownloadsViewController" storyboardIdentifier="FirstInitialDownloadsViewController" id="If2-KF-ADP" customClass="FirstInitialDownloadsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="chd-MF-DUi"/>
+                        <viewControllerLayoutGuide type="bottom" id="kDw-Kj-THq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fxe-EZ-Qal">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zT5-3a-Lxg">
+                                <rect key="frame" x="56" y="172" width="302" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome to Zaair Guide!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e6f-ia-zHt">
+                                <rect key="frame" x="87" y="536" width="242" height="30"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" red="0.38431372549999998" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ytg-5Q-x0Q">
+                                <rect key="frame" x="132" y="654" width="150" height="40"/>
+                                <color key="backgroundColor" red="0.38431372549999998" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
+                                <state key="normal" title="GET STARTED">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnDoneTapped:" destination="If2-KF-ADP" eventType="touchUpInside" id="aHg-cN-jSU"/>
+                                </connections>
+                            </button>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="no_internet" translatesAutoresizingMaskIntoConstraints="NO" id="dCW-D4-oBv">
+                                <rect key="frame" x="152" y="253" width="110" height="110"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="appload_icon-1" translatesAutoresizingMaskIntoConstraints="NO" id="zud-oa-EZp">
+                                <rect key="frame" x="143" y="243" width="130" height="130"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eDD-LZ-U6G">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="20"/>
+                                <color key="backgroundColor" red="0.38431372549999998" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="b9o-Bs-coT"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="zaair_logo" translatesAutoresizingMaskIntoConstraints="NO" id="pJa-cm-UiW">
+                                <rect key="frame" x="113" y="110" width="188" height="54"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please wait while we download the required files" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gmk-my-OXf">
+                                <rect key="frame" x="86" y="536" width="242" height="42"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                <color key="textColor" red="0.38431372549999998" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please wait while we download the required files" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rdL-bP-Wpx">
+                                <rect key="frame" x="13" y="570" width="389" height="58"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                <color key="textColor" red="0.38431372549999998" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dzo-CS-NWf">
+                                <rect key="frame" x="56" y="394" width="304" height="2"/>
+                                <color key="progressTintColor" red="0.4431372549" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </progressView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="eDD-LZ-U6G" firstAttribute="leading" secondItem="fxe-EZ-Qal" secondAttribute="leadingMargin" constant="-20" id="cWu-DL-XX6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="eDD-LZ-U6G" secondAttribute="trailing" constant="-20" id="x2d-aS-wY6"/>
+                            <constraint firstItem="eDD-LZ-U6G" firstAttribute="top" secondItem="fxe-EZ-Qal" secondAttribute="topMargin" id="zqc-rb-odh"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="btnNext" destination="Ytg-5Q-x0Q" id="dyA-be-TEN"/>
+                        <outlet property="iconImage" destination="zud-oa-EZp" id="JK6-YA-gDO"/>
+                        <outlet property="imgNoImage" destination="dCW-D4-oBv" id="qxm-bI-d1V"/>
+                        <outlet property="lblDescribtionMessage" destination="rdL-bP-Wpx" id="wQd-7J-A2k"/>
+                        <outlet property="lblNumber" destination="zT5-3a-Lxg" id="Jrs-da-XoR"/>
+                        <outlet property="lblText" destination="gmk-my-OXf" id="lBc-3N-Uwg"/>
+                        <outlet property="lblWelcomeHeading" destination="e6f-ia-zHt" id="4nT-B4-ZfO"/>
+                        <outlet property="progressBar" destination="Dzo-CS-NWf" id="0cb-A6-1zA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QTg-7q-LbN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="779" y="407"/>
+        </scene>
+        <!--First Initial Downloads View Controller-->
+        <scene sceneID="7tS-qJ-FRw">
+            <objects>
+                <viewController restorationIdentifier="FirstInitialDownloadsViewControllerPad" storyboardIdentifier="FirstInitialDownloadsViewControllerPad" id="utg-iM-pUB" customClass="FirstInitialDownloadsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="avZ-BE-SV5"/>
+                        <viewControllerLayoutGuide type="bottom" id="myR-f7-zxh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nZI-Hw-qTq">
+                        <rect key="frame" x="0.0" y="0.0" width="507" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Zaair Guide!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A0n-It-TfC">
+                                <rect key="frame" x="133" y="326" width="242" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="242" id="8WO-n3-AQc"/>
+                                    <constraint firstAttribute="height" constant="30" id="PBF-jd-S0i"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" red="0.38431372549999998" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="no_internet" translatesAutoresizingMaskIntoConstraints="NO" id="bB2-hM-ihl">
+                                <rect key="frame" x="198" y="160" width="110" height="110"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="110" id="dMb-SV-yY2"/>
+                                    <constraint firstAttribute="height" constant="110" id="mbX-50-aDw"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="appload_icon-1" translatesAutoresizingMaskIntoConstraints="NO" id="ad6-PU-IQm">
+                                <rect key="frame" x="189" y="150" width="130" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="RJd-09-HEw"/>
+                                    <constraint firstAttribute="height" constant="130" id="lDF-lY-MvN"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VFY-oo-vBj">
+                                <rect key="frame" x="0.0" y="0.0" width="507" height="20"/>
+                                <color key="backgroundColor" red="0.38431372549999998" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="FUx-G9-mxK"/>
+                                    <constraint firstAttribute="width" constant="507" id="Rna-z4-33h"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="zaair_logo" translatesAutoresizingMaskIntoConstraints="NO" id="rmH-5s-4jy">
+                                <rect key="frame" x="160" y="63" width="188" height="53"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="188" id="dj1-Ge-czr"/>
+                                    <constraint firstAttribute="height" constant="53" id="vN7-0e-Use"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please wait while we download the required files" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wHi-6x-Piv">
+                                <rect key="frame" x="132" y="326" width="242" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="TeB-Ym-Kte"/>
+                                    <constraint firstAttribute="width" constant="242" id="yZo-Xa-ii5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                <color key="textColor" red="0.38431372549999998" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please wait while we download the required files" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fgf-0A-6hG">
+                                <rect key="frame" x="59" y="360" width="389" height="58"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="389" id="RVo-za-bm6"/>
+                                    <constraint firstAttribute="height" constant="58" id="mqe-G7-SJc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <color key="textColor" red="0.38431372549999998" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="AW3-zG-i1v">
+                                <rect key="frame" x="101" y="301" width="304" height="2"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="2" id="dCr-TO-PCk"/>
+                                    <constraint firstAttribute="width" constant="304" id="eCt-bq-QEG"/>
+                                </constraints>
+                                <color key="progressTintColor" red="0.4431372549" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </progressView>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TUI-hK-8tM">
+                                <rect key="frame" x="178.5" y="426" width="150" height="40"/>
+                                <color key="backgroundColor" red="0.38431372549999998" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="E7e-wR-ULW"/>
+                                    <constraint firstAttribute="width" constant="150" id="Zsq-cp-C3J"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
+                                <state key="normal" title="GET STARTED">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnDoneTapped:" destination="utg-iM-pUB" eventType="touchUpInside" id="veZ-wO-oFn"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bB2-hM-ihl" firstAttribute="centerX" secondItem="nZI-Hw-qTq" secondAttribute="centerX" id="2bG-Yo-kYT"/>
+                            <constraint firstItem="TUI-hK-8tM" firstAttribute="top" secondItem="Fgf-0A-6hG" secondAttribute="bottom" constant="8" id="A4n-EV-HY4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="VFY-oo-vBj" secondAttribute="trailing" constant="-20" id="DZb-fA-xkO"/>
+                            <constraint firstItem="Fgf-0A-6hG" firstAttribute="centerX" secondItem="nZI-Hw-qTq" secondAttribute="centerX" id="Ds2-GU-b6l"/>
+                            <constraint firstItem="rmH-5s-4jy" firstAttribute="top" secondItem="avZ-BE-SV5" secondAttribute="bottom" constant="43" id="Dtn-ey-DlL"/>
+                            <constraint firstItem="VFY-oo-vBj" firstAttribute="top" secondItem="nZI-Hw-qTq" secondAttribute="topMargin" id="E0A-Im-8cJ"/>
+                            <constraint firstItem="wHi-6x-Piv" firstAttribute="top" secondItem="AW3-zG-i1v" secondAttribute="bottom" constant="23" id="G4j-pD-U1v"/>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="Fgf-0A-6hG" secondAttribute="trailing" constant="1" id="HPB-Fp-d3j"/>
+                            <constraint firstItem="A0n-It-TfC" firstAttribute="top" secondItem="AW3-zG-i1v" secondAttribute="bottom" constant="23" id="Lfd-aE-vIi"/>
+                            <constraint firstItem="bB2-hM-ihl" firstAttribute="top" secondItem="rmH-5s-4jy" secondAttribute="bottom" constant="44" id="MBc-Ru-JU5"/>
+                            <constraint firstItem="AW3-zG-i1v" firstAttribute="top" secondItem="ad6-PU-IQm" secondAttribute="bottom" constant="21" id="Nas-zM-0pf"/>
+                            <constraint firstItem="wHi-6x-Piv" firstAttribute="centerX" secondItem="nZI-Hw-qTq" secondAttribute="centerX" id="VTC-ye-6IJ"/>
+                            <constraint firstItem="ad6-PU-IQm" firstAttribute="centerX" secondItem="nZI-Hw-qTq" secondAttribute="centerX" id="X3J-iv-gsz"/>
+                            <constraint firstItem="rmH-5s-4jy" firstAttribute="centerX" secondItem="nZI-Hw-qTq" secondAttribute="centerX" id="YSj-ms-Yy4"/>
+                            <constraint firstItem="A0n-It-TfC" firstAttribute="centerX" secondItem="nZI-Hw-qTq" secondAttribute="centerX" id="Ydl-94-AMq"/>
+                            <constraint firstItem="VFY-oo-vBj" firstAttribute="leading" secondItem="nZI-Hw-qTq" secondAttribute="leadingMargin" constant="-20" id="hUm-27-vMe"/>
+                            <constraint firstItem="ad6-PU-IQm" firstAttribute="top" secondItem="rmH-5s-4jy" secondAttribute="bottom" constant="34" id="kYi-rc-bTi"/>
+                            <constraint firstItem="Fgf-0A-6hG" firstAttribute="top" secondItem="A0n-It-TfC" secondAttribute="bottom" constant="4" id="oao-WF-Fx3"/>
+                            <constraint firstItem="Fgf-0A-6hG" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="nZI-Hw-qTq" secondAttribute="leadingMargin" constant="1" id="pBa-QU-MhM"/>
+                            <constraint firstItem="AW3-zG-i1v" firstAttribute="centerX" secondItem="nZI-Hw-qTq" secondAttribute="centerX" id="tev-Os-Nch"/>
+                            <constraint firstItem="TUI-hK-8tM" firstAttribute="centerX" secondItem="nZI-Hw-qTq" secondAttribute="centerX" id="xV2-Ug-rbe"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad-1/2"/>
+                    <connections>
+                        <outlet property="btnNext" destination="TUI-hK-8tM" id="CgI-2v-8M0"/>
+                        <outlet property="iconImage" destination="ad6-PU-IQm" id="Bwi-CJ-Rrg"/>
+                        <outlet property="imgNoImage" destination="bB2-hM-ihl" id="6NP-HE-KN0"/>
+                        <outlet property="lblDescribtionMessage" destination="Fgf-0A-6hG" id="quP-G8-IOT"/>
+                        <outlet property="lblText" destination="wHi-6x-Piv" id="h5g-dv-ZwO"/>
+                        <outlet property="lblWelcomeHeading" destination="A0n-It-TfC" id="no2-MN-hRw"/>
+                        <outlet property="progressBar" destination="AW3-zG-i1v" id="6tU-yu-taD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="17p-7J-0Hi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="118.5" y="407"/>
+        </scene>
+        <!--First Initial Downloads View Controller-->
+        <scene sceneID="BUx-mc-888">
+            <objects>
+                <viewController restorationIdentifier="FirstInitialDownloadsViewController6" storyboardIdentifier="FirstInitialDownloadsViewController6" id="24B-bk-MY4" customClass="FirstInitialDownloadsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ttL-xq-j1d"/>
+                        <viewControllerLayoutGuide type="bottom" id="HSa-gT-Dlm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="PhC-vU-nHV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="no_internet" translatesAutoresizingMaskIntoConstraints="NO" id="HGl-sp-1qY">
+                                <rect key="frame" x="137" y="253" width="100" height="100"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="appload_icon-1" translatesAutoresizingMaskIntoConstraints="NO" id="OaD-gC-RCZ">
+                                <rect key="frame" x="123" y="238" width="130" height="130"/>
+                            </imageView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IlX-rT-bxy">
+                                <rect key="frame" x="36" y="385" width="304" height="2"/>
+                                <color key="progressTintColor" red="0.4431372549" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </progressView>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hQ6-ub-aPQ">
+                                <rect key="frame" x="53" y="145" width="302" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="zaair_logo" translatesAutoresizingMaskIntoConstraints="NO" id="wfA-du-CiW">
+                                <rect key="frame" x="93" y="83" width="188" height="54"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pd2-IE-9Bd">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="20"/>
+                                <color key="backgroundColor" red="0.38431372549999998" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome to Zaair Guide!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p8G-cQ-Zou">
+                                <rect key="frame" x="67" y="476" width="242" height="30"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" red="0.38431372549999998" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please wait while we download the required files" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nQ3-2s-C1p">
+                                <rect key="frame" x="0.0" y="510" width="375" height="58"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <color key="textColor" red="0.38431372549999998" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please wait while we download the required files" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G9q-sD-Zh8">
+                                <rect key="frame" x="66" y="476" width="242" height="42"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <color key="textColor" red="0.38431372549999998" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Wf-Yg-5J6">
+                                <rect key="frame" x="112" y="594" width="150" height="40"/>
+                                <color key="backgroundColor" red="0.38431372549999998" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
+                                <state key="normal" title="GET STARTED">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnDoneTapped:" destination="24B-bk-MY4" eventType="touchUpInside" id="wFm-tf-QBh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="btnNext" destination="7Wf-Yg-5J6" id="cUt-PZ-8H6"/>
+                        <outlet property="iconImage" destination="OaD-gC-RCZ" id="Ete-E7-TyT"/>
+                        <outlet property="imgNoImage" destination="HGl-sp-1qY" id="c1O-pd-98d"/>
+                        <outlet property="lblDescribtionMessage" destination="nQ3-2s-C1p" id="0AC-GD-3Gi"/>
+                        <outlet property="lblNumber" destination="hQ6-ub-aPQ" id="gyM-hX-XjD"/>
+                        <outlet property="lblText" destination="G9q-sD-Zh8" id="aVm-EE-aXI"/>
+                        <outlet property="lblWelcomeHeading" destination="p8G-cQ-Zou" id="fvM-BO-Ffb"/>
+                        <outlet property="progressBar" destination="IlX-rT-bxy" id="gY6-Ft-C7Y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VGC-NA-NJD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1167.5" y="365.5"/>
+        </scene>
+        <!--First Initial Downloads View Controller-->
+        <scene sceneID="lqH-tb-GLH">
+            <objects>
+                <viewController restorationIdentifier="FirstInitialDownloadsViewControllerFor5" storyboardIdentifier="FirstInitialDownloadsViewControllerFor5" id="0Jy-Ux-G52" customClass="FirstInitialDownloadsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hCd-h9-4tD"/>
+                        <viewControllerLayoutGuide type="bottom" id="iR1-hN-NEc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yMf-H5-eKg">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qjy-B8-TU7">
+                                <rect key="frame" x="9" y="125" width="302" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="appload_icon-1" translatesAutoresizingMaskIntoConstraints="NO" id="xN9-g1-2C4">
+                                <rect key="frame" x="96" y="163" width="130" height="130"/>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="no_internet" translatesAutoresizingMaskIntoConstraints="NO" id="XaM-0a-VRo">
+                                <rect key="frame" x="110" y="178" width="100" height="100"/>
+                            </imageView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Ga-Nm-ldu">
+                                <rect key="frame" x="8" y="308" width="304" height="2"/>
+                                <color key="progressTintColor" red="0.4431372549" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </progressView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sDc-0L-Op0">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="20"/>
+                                <color key="backgroundColor" red="0.38431372549999998" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="zaair_logo" translatesAutoresizingMaskIntoConstraints="NO" id="utY-r7-c5l">
+                                <rect key="frame" x="66" y="84" width="188" height="54"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please wait while we download the required files" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Xm-Zy-rni">
+                                <rect key="frame" x="39" y="368" width="242" height="42"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <color key="textColor" red="0.38431372549999998" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YrK-S8-8mn">
+                                <rect key="frame" x="85" y="508" width="150" height="40"/>
+                                <color key="backgroundColor" red="0.38431372549999998" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
+                                <state key="normal" title="GET STARTED">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnDoneTapped:" destination="0Jy-Ux-G52" eventType="touchUpInside" id="fz4-pa-5zt"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome to Zaair Guide!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HDk-0w-Fwo">
+                                <rect key="frame" x="47" y="368" width="242" height="30"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" red="0.38431372549999998" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please wait while we download the required files" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b3z-yJ-xug">
+                                <rect key="frame" x="5" y="402" width="311" height="58"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                <color key="textColor" red="0.38431372549999998" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="btnNext" destination="YrK-S8-8mn" id="MVs-eN-SRl"/>
+                        <outlet property="iconImage" destination="xN9-g1-2C4" id="VWS-rg-m5W"/>
+                        <outlet property="imgNoImage" destination="XaM-0a-VRo" id="t8z-Fo-Ncn"/>
+                        <outlet property="lblDescribtionMessage" destination="b3z-yJ-xug" id="szd-Fa-99a"/>
+                        <outlet property="lblNumber" destination="qjy-B8-TU7" id="vv5-cI-WeP"/>
+                        <outlet property="lblText" destination="3Xm-Zy-rni" id="3m1-LD-iR1"/>
+                        <outlet property="lblWelcomeHeading" destination="HDk-0w-Fwo" id="uKV-Pe-s9y"/>
+                        <outlet property="progressBar" destination="5Ga-Nm-ldu" id="LZC-gl-SLc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S4s-nE-vbb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1538" y="316"/>
+        </scene>
+        <!--First Initial Downloads View Controller-->
+        <scene sceneID="4Il-xw-Tjc">
+            <objects>
+                <viewController restorationIdentifier="FirstInitialDownloadsViewControllerFor4" storyboardIdentifier="FirstInitialDownloadsViewControllerFor4" id="HNi-k3-zEB" customClass="FirstInitialDownloadsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5EH-7d-u7c"/>
+                        <viewControllerLayoutGuide type="bottom" id="WI4-jc-nUW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3Lc-hw-Ma7">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dXU-nY-JFk">
+                                <rect key="frame" x="9" y="125" width="302" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="appload_icon-1" translatesAutoresizingMaskIntoConstraints="NO" id="rY6-xR-hDj">
+                                <rect key="frame" x="96" y="125" width="130" height="130"/>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="no_internet" translatesAutoresizingMaskIntoConstraints="NO" id="fpO-oi-wmC">
+                                <rect key="frame" x="110" y="140" width="100" height="100"/>
+                            </imageView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YzA-VC-aXg">
+                                <rect key="frame" x="8" y="263" width="304" height="2"/>
+                                <color key="progressTintColor" red="0.4431372549" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </progressView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hRq-7c-Yct">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="20"/>
+                                <color key="backgroundColor" red="0.38431372549999998" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="zaair_logo" translatesAutoresizingMaskIntoConstraints="NO" id="ONu-4H-SCC">
+                                <rect key="frame" x="66" y="36" width="188" height="54"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please wait while we download the required files" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xVn-Yd-1km">
+                                <rect key="frame" x="39" y="317" width="242" height="42"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <color key="textColor" red="0.38431372549999998" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="izu-r1-vIZ">
+                                <rect key="frame" x="85" y="420" width="150" height="40"/>
+                                <color key="backgroundColor" red="0.38431372549999998" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
+                                <state key="normal" title="GET STARTED">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnDoneTapped:" destination="HNi-k3-zEB" eventType="touchUpInside" id="p7s-xh-S79"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome to Zaair Guide!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UPk-b7-Tzt">
+                                <rect key="frame" x="47" y="317" width="242" height="30"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" red="0.38431372549999998" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please wait while we download the required files" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xo9-fl-ZDA">
+                                <rect key="frame" x="5" y="351" width="311" height="58"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                <color key="textColor" red="0.38431372549999998" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="btnNext" destination="izu-r1-vIZ" id="8WU-lZ-yGR"/>
+                        <outlet property="iconImage" destination="rY6-xR-hDj" id="2mn-ff-n9z"/>
+                        <outlet property="imgNoImage" destination="fpO-oi-wmC" id="sVn-7G-dvS"/>
+                        <outlet property="lblDescribtionMessage" destination="Xo9-fl-ZDA" id="rFm-Z2-nFB"/>
+                        <outlet property="lblNumber" destination="dXU-nY-JFk" id="VXo-a1-9Ty"/>
+                        <outlet property="lblText" destination="xVn-Yd-1km" id="EMq-dZ-8iS"/>
+                        <outlet property="lblWelcomeHeading" destination="UPk-b7-Tzt" id="cnG-3r-9Os"/>
+                        <outlet property="progressBar" destination="YzA-VC-aXg" id="d84-6X-HQc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IYE-NX-fFn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1891" y="316"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="appload_icon-1" width="130" height="130"/>
+        <image name="no_internet" width="104" height="104"/>
+        <image name="zaair_logo" width="187" height="53"/>
+    </resources>
+</document>

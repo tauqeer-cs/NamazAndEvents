@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cellH" id="TJm-LT-8z8" customClass="HistoryCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="398" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="398" height="80"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Pw-xs-288">
+                        <rect key="frame" x="69" y="41" width="321" height="31"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="12"/>
+                        <color key="textColor" red="0.1960784314" green="0.1960784314" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pO9-HZ-Gs2">
+                        <rect key="frame" x="0.0" y="0.0" width="64" height="80"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="HIJRI 07" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q84-Jw-hog">
+                                <rect key="frame" x="0.0" y="8" width="64" height="16"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="13"/>
+                                <color key="textColor" red="0.4431372549" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="17" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1g1-zT-T8S">
+                                <rect key="frame" x="0.0" y="24" width="64" height="35"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="35"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Jumada II" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hkk-Bs-faT">
+                                <rect key="frame" x="0.0" y="59" width="64" height="16"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="13"/>
+                                <color key="textColor" red="0.4431372549" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="64" id="XaJ-qA-u2m"/>
+                            <constraint firstAttribute="height" constant="80" id="ncr-DY-Ewv"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Exe-4S-kJq">
+                        <rect key="frame" x="69" y="12" width="321" height="18"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="17" id="Xq4-mc-lkZ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="15"/>
+                        <color key="textColor" red="0.1960784314" green="0.1960784314" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <animations/>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="6Pw-xs-288" secondAttribute="bottom" constant="8" id="AZB-Mp-f5H"/>
+                <constraint firstItem="6Pw-xs-288" firstAttribute="leading" secondItem="pO9-HZ-Gs2" secondAttribute="trailing" constant="5" id="GZ5-fh-Mcd"/>
+                <constraint firstItem="pO9-HZ-Gs2" firstAttribute="top" secondItem="TJm-LT-8z8" secondAttribute="top" id="GaA-HG-3oG"/>
+                <constraint firstItem="Exe-4S-kJq" firstAttribute="top" secondItem="TJm-LT-8z8" secondAttribute="top" constant="12" id="VQn-qe-IZ6"/>
+                <constraint firstAttribute="bottom" secondItem="pO9-HZ-Gs2" secondAttribute="bottom" id="dVz-CE-TsU"/>
+                <constraint firstItem="Exe-4S-kJq" firstAttribute="leading" secondItem="pO9-HZ-Gs2" secondAttribute="trailing" constant="5" id="ieH-bT-hIt"/>
+                <constraint firstAttribute="trailing" secondItem="Exe-4S-kJq" secondAttribute="trailing" constant="8" id="ieh-iw-7NV"/>
+                <constraint firstItem="6Pw-xs-288" firstAttribute="top" secondItem="Exe-4S-kJq" secondAttribute="bottom" constant="11" id="jjb-kY-fYV"/>
+                <constraint firstAttribute="trailing" secondItem="6Pw-xs-288" secondAttribute="trailing" constant="8" id="mIa-AC-m45"/>
+                <constraint firstItem="pO9-HZ-Gs2" firstAttribute="leading" secondItem="TJm-LT-8z8" secondAttribute="leading" id="ypN-CQ-KAB"/>
+            </constraints>
+            <size key="customSize" width="398" height="70"/>
+            <connections>
+                <outlet property="lblEventDetail" destination="6Pw-xs-288" id="5t0-IM-Y6x"/>
+                <outlet property="lblEventName" destination="Exe-4S-kJq" id="7F3-5F-Lcj"/>
+                <outlet property="lblHijriDay" destination="1g1-zT-T8S" id="XIi-P5-xFc"/>
+                <outlet property="lblHijriMonth" destination="hkk-Bs-faT" id="Ti3-sk-9dD"/>
+                <outlet property="lblHijriYear" destination="Q84-Jw-hog" id="w5J-OV-uhS"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+</document>

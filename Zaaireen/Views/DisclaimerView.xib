@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="lm9-uc-9ER" customClass="DisclaimerView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="426"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xyX-5o-Zga">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="386"/>
+                    <subviews>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hXw-68-3Gs">
+                            <rect key="frame" x="0.0" y="41" width="320" height="345"/>
+                            <animations/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <attributedString key="attributedText">
+                                <fragment content="★">
+                                    <attributes>
+                                        <font key="NSFont" size="14" name="PingFangSC-Regular"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                                <fragment>
+                                    <string key="content"> North measured by mobile sensors may vary up to 90 degrees from the true north, consequently Qiblah calculated from north in mobile applications may result in a serious deviation from the Qiblah direction. Visual Qiblah considers this reliability issue and overlays the Qiblah on Google Maps™ so that the user can visually verify Qiblah with nearby features, such as buildings, streets, and do the needed alignment.
+</string>
+                                    <attributes>
+                                        <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                                <fragment content="★">
+                                    <attributes>
+                                        <font key="NSFont" size="14" name="PingFangSC-Regular"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                                <fragment>
+                                    <string key="content"> Magnetic deviation, induced by nearby metallic objects (e.g. mobile leather case) and electronic devices, can cause the sensors to behave unpredictably. Visual Qiblah identifies abnormal magnetic field strength and warns the user.
+</string>
+                                    <attributes>
+                                        <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                                <fragment content="★">
+                                    <attributes>
+                                        <font key="NSFont" size="14" name="PingFangSC-Regular"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                                <fragment>
+                                    <string key="content"> Magnetic declination (the angle between true north and magnetic north) at user’s location is another source of confusion (e.g. In the South America magnetic declination reaches 17 degrees). Visual Qiblah calculates Qiblah from true (geographic) north. Additional information about Qiblah from magnetic north at user’s location is also provided for those who prefer to use real compass.
+</string>
+                                    <attributes>
+                                        <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                                <fragment content="★">
+                                    <attributes>
+                                        <font key="NSFont" size="14" name="PingFangSC-Regular"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                                <fragment content=" Visual Qiblah uses formulae to calculate Qiblah that are accurate to within 0.5 mm (0.020″) on the Earth.">
+                                    <attributes>
+                                        <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Disclaimer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ifL-0h-l7j">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+                            <animations/>
+                            <color key="backgroundColor" red="0.4431372549" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="Cdw-QC-BAQ"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="27"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="ifL-0h-l7j" secondAttribute="trailing" id="5JT-6z-Vd2"/>
+                        <constraint firstItem="ifL-0h-l7j" firstAttribute="leading" secondItem="xyX-5o-Zga" secondAttribute="leading" id="Cwz-Jh-di2"/>
+                        <constraint firstItem="hXw-68-3Gs" firstAttribute="top" secondItem="ifL-0h-l7j" secondAttribute="bottom" constant="1" id="KW9-3N-e36"/>
+                        <constraint firstItem="hXw-68-3Gs" firstAttribute="leading" secondItem="xyX-5o-Zga" secondAttribute="leading" id="WM9-MP-1AH"/>
+                        <constraint firstAttribute="bottom" secondItem="hXw-68-3Gs" secondAttribute="bottom" id="d0F-cp-Cfs"/>
+                        <constraint firstAttribute="trailing" secondItem="hXw-68-3Gs" secondAttribute="trailing" id="ous-So-Eq5"/>
+                        <constraint firstItem="ifL-0h-l7j" firstAttribute="top" secondItem="xyX-5o-Zga" secondAttribute="top" id="vUK-zz-dIq"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RWB-FP-qnT">
+                    <rect key="frame" x="0.0" y="386" width="320" height="40"/>
+                    <animations/>
+                    <color key="backgroundColor" red="0.4431372549" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="2D3-3S-8PT"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                    <state key="normal" title="Done">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="btnDownloadTapped:" destination="lm9-uc-9ER" eventType="touchUpInside" id="QiU-fo-GQU"/>
+                    </connections>
+                </button>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="RWB-FP-qnT" firstAttribute="leading" secondItem="lm9-uc-9ER" secondAttribute="leading" id="3Ue-eR-fyy"/>
+                <constraint firstAttribute="trailing" secondItem="RWB-FP-qnT" secondAttribute="trailing" id="MPa-vK-o7E"/>
+                <constraint firstItem="xyX-5o-Zga" firstAttribute="leading" secondItem="RWB-FP-qnT" secondAttribute="leading" id="PPj-BG-Wbc"/>
+                <constraint firstItem="xyX-5o-Zga" firstAttribute="top" secondItem="lm9-uc-9ER" secondAttribute="top" id="TkR-NT-gTM"/>
+                <constraint firstAttribute="bottom" secondItem="RWB-FP-qnT" secondAttribute="bottom" id="b6B-gL-rWc"/>
+                <constraint firstItem="RWB-FP-qnT" firstAttribute="top" secondItem="xyX-5o-Zga" secondAttribute="bottom" id="gh3-Pv-WbZ"/>
+                <constraint firstItem="xyX-5o-Zga" firstAttribute="trailing" secondItem="RWB-FP-qnT" secondAttribute="trailing" id="mx2-rW-5xD"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="336" y="281"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cellPersonalityProperty" rowHeight="34" id="vyg-U7-s42" customClass="PersonalityPropertyTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="398" height="34"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vyg-U7-s42" id="TNa-8C-Qxm">
+                <rect key="frame" x="0.0" y="0.0" width="398" height="33.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Born" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ncD-fB-l4Q">
+                        <rect key="frame" x="139" y="8" width="242" height="21"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="242" id="7LK-tO-83A"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="tIa-jp-Mo9"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Born" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="key-AV-pDd">
+                        <rect key="frame" x="17" y="8" width="101" height="21"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="8dL-XZ-39S"/>
+                            <constraint firstAttribute="width" constant="101" id="Sk0-6K-i3t"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <animations/>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="key-AV-pDd" secondAttribute="bottom" constant="-3.5" id="52U-B8-Meh"/>
+                    <constraint firstItem="ncD-fB-l4Q" firstAttribute="top" secondItem="TNa-8C-Qxm" secondAttribute="topMargin" id="EsA-7u-qAn"/>
+                    <constraint firstItem="ncD-fB-l4Q" firstAttribute="leading" secondItem="key-AV-pDd" secondAttribute="trailing" constant="21" id="Hqq-T0-BFZ"/>
+                    <constraint firstItem="key-AV-pDd" firstAttribute="leading" secondItem="TNa-8C-Qxm" secondAttribute="leadingMargin" constant="9" id="ksO-lh-RL5"/>
+                    <constraint firstItem="key-AV-pDd" firstAttribute="top" secondItem="TNa-8C-Qxm" secondAttribute="topMargin" id="scw-xl-FNj"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="ncD-fB-l4Q" secondAttribute="trailing" constant="9" id="sss-sX-0i6"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="ncD-fB-l4Q" secondAttribute="bottom" constant="-3.5" id="vmr-57-HIG"/>
+                </constraints>
+            </tableViewCellContentView>
+            <animations/>
+            <connections>
+                <outlet property="lblPropertyName" destination="key-AV-pDd" id="hV9-yN-rV6"/>
+                <outlet property="lblValue" destination="ncD-fB-l4Q" id="IZQ-dn-LJ7"/>
+            </connections>
+            <point key="canvasLocation" x="445" y="361"/>
+        </tableViewCell>
+    </objects>
+</document>

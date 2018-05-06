@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cellGalleryName" id="Tll-Hs-grS" customClass="GalleryListingCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="160" height="160"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="160" height="160"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GMc-6C-FS7">
+                        <rect key="frame" x="0.0" y="0.0" width="160" height="160"/>
+                        <animations/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n11-oO-6f4">
+                        <rect key="frame" x="0.0" y="110" width="160" height="50"/>
+                        <animations/>
+                        <color key="backgroundColor" red="0.1960784314" green="0.1960784314" blue="0.1960784314" alpha="0.30209930979999999" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="sGE-o6-3ky">
+                        <rect key="frame" x="70" y="70" width="20" height="20"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="DqA-2t-giM"/>
+                            <constraint firstAttribute="height" constant="20" id="e3A-aZ-lWg"/>
+                        </constraints>
+                        <color key="color" red="0.4431372549" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </activityIndicatorView>
+                </subviews>
+                <animations/>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="sGE-o6-3ky" firstAttribute="centerY" secondItem="Tll-Hs-grS" secondAttribute="centerY" id="40n-RI-SzK"/>
+                <constraint firstItem="GMc-6C-FS7" firstAttribute="top" secondItem="Tll-Hs-grS" secondAttribute="top" id="AWp-0E-TLb"/>
+                <constraint firstItem="GMc-6C-FS7" firstAttribute="leading" secondItem="Tll-Hs-grS" secondAttribute="leading" id="HRU-Dd-Pyj"/>
+                <constraint firstAttribute="trailing" secondItem="GMc-6C-FS7" secondAttribute="trailing" id="HRm-lY-neA"/>
+                <constraint firstAttribute="bottom" secondItem="n11-oO-6f4" secondAttribute="bottom" id="cYc-V7-EIE"/>
+                <constraint firstAttribute="trailing" secondItem="n11-oO-6f4" secondAttribute="trailing" id="fhc-4U-Fej"/>
+                <constraint firstAttribute="bottom" secondItem="GMc-6C-FS7" secondAttribute="bottom" id="nNl-6q-XPc"/>
+                <constraint firstItem="sGE-o6-3ky" firstAttribute="centerX" secondItem="Tll-Hs-grS" secondAttribute="centerX" id="qxj-vX-c7R"/>
+                <constraint firstItem="n11-oO-6f4" firstAttribute="leading" secondItem="Tll-Hs-grS" secondAttribute="leading" id="vAd-5T-V5m"/>
+                <constraint firstItem="n11-oO-6f4" firstAttribute="top" secondItem="Tll-Hs-grS" secondAttribute="top" constant="110" id="ygg-ek-5sU"/>
+            </constraints>
+            <size key="customSize" width="398" height="70"/>
+            <connections>
+                <outlet property="imgThumb" destination="GMc-6C-FS7" id="2EB-Bl-akN"/>
+                <outlet property="lblTitle" destination="n11-oO-6f4" id="If1-Hp-rRX"/>
+                <outlet property="loader" destination="sGE-o6-3ky" id="15o-cx-Lc9"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+</document>

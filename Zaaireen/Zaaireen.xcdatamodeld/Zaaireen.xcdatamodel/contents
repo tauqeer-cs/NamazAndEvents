@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9057" systemVersion="15B42" minimumToolsVersion="Xcode 7.0">
+    <entity name="Asset" representedClassName="Asset" syncable="YES">
+        <attribute name="assetId" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="assetSize" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="assetTypeId" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="assetUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="attribute" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cityId" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="createdAt" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="detail" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="extra" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isDowloaded" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="isStatus" optional="YES" attributeType="Boolean" defaultValueString="0" syncable="YES"/>
+        <attribute name="mediaType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="updatedAt" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="assetType" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="AssetType" inverseName="assets" inverseEntity="AssetType" syncable="YES"/>
+        <relationship name="cityDetail" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Cities" inverseName="assets" inverseEntity="Cities" syncable="YES"/>
+    </entity>
+    <entity name="AssetsDetail" representedClassName="AssetsDetail" syncable="YES">
+        <attribute name="assetDetailId" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="assetId" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="createdAt" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="targetId" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="targetType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="updatedAt" optional="YES" attributeType="Date" syncable="YES"/>
+    </entity>
+    <entity name="AssetType" representedClassName="AssetType" syncable="YES">
+        <attribute name="assetTypeId" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="createdAt" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="detail" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="updatedAt" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="assets" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Asset" inverseName="assetType" inverseEntity="Asset" syncable="YES"/>
+    </entity>
+    <entity name="Cities" representedClassName="Cities" syncable="YES">
+        <attribute name="cityId" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="countryId" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="createdAt" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="detail" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lat" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="time_zone" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="woeid" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="assets" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Asset" inverseName="cityDetail" inverseEntity="Asset" syncable="YES"/>
+        <relationship name="cityCountry" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Countries" inverseName="cities" inverseEntity="Countries" syncable="YES"/>
+        <relationship name="trips" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Trips" inverseName="tripCity" inverseEntity="Trips" syncable="YES"/>
+    </entity>
+    <entity name="Countries" representedClassName="Countries" syncable="YES">
+        <attribute name="code" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="countryId" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="createdAt" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="flagUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="updatedAt" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="cities" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Cities" inverseName="cityCountry" inverseEntity="Cities" syncable="YES"/>
+        <relationship name="emergencyNumbers" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Emergency" inverseName="country" inverseEntity="Emergency" syncable="YES"/>
+    </entity>
+    <entity name="DayDetail" representedClassName="DayDetail" syncable="YES">
+        <attribute name="created_at" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="date_calender" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dayDetailId" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="dayType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="display_date" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="refrences" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="text" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="updatedAt" optional="YES" attributeType="Date" syncable="YES"/>
+    </entity>
+    <entity name="Emergency" representedClassName="Emergency" syncable="YES">
+        <attribute name="createdAt" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="emgencyId" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="eType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imageurl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="phone1" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="updatedAt" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="country" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Countries" inverseName="emergencyNumbers" inverseEntity="Countries" syncable="YES"/>
+    </entity>
+    <entity name="LandmarkPersonalityDetail" representedClassName="LandmarkPersonalityDetail" syncable="YES">
+        <attribute name="createdAt" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="extra" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="landmarkId" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="landmarkPersonalityDetailId" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="personalityId" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="Landmarks" representedClassName="Landmarks" syncable="YES">
+        <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="attribute" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cityId" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="createdAt" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="detail" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="extra" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="geo_lat" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="geo_long" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="imageUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isFeatured" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="landmarkId" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="landmarkTypeId" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="updatedAt" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="assets" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Asset" syncable="YES"/>
+        <relationship name="cityDetail" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Cities" syncable="YES"/>
+        <relationship name="landmarkTypeDetail" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="LandmarkType" syncable="YES"/>
+        <relationship name="personalities" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Personality" syncable="YES"/>
+        <relationship name="trip" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Trips" inverseName="tripLandmarks" inverseEntity="Trips" syncable="YES"/>
+    </entity>
+    <entity name="LandmarkType" representedClassName="LandmarkType" syncable="YES">
+        <attribute name="createdAt" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="detail" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="landmarkTypeId" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="updatedAt" optional="YES" attributeType="Date" syncable="YES"/>
+    </entity>
+    <entity name="Personality" representedClassName="Personality" syncable="YES">
+        <attribute name="createdAt" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="data" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="detail" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="personality_type" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="personalityId" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="updatedAt" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="characteristic" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="PersonalityCharacteristics" syncable="YES"/>
+        <relationship name="personalityAssets" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Asset" syncable="YES"/>
+    </entity>
+    <entity name="PersonalityCharacteristics" representedClassName="PersonalityCharacteristics" syncable="YES">
+        <attribute name="characteristicId" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="orderBy" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="personalityId" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="value" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Source" representedClassName="Source" syncable="YES">
+        <attribute name="author" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="createdAt" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="detail" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="extra" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="publishedAt" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="reviewedBy" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sourceId" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="sourceUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="updatedAt" optional="YES" attributeType="Date" syncable="YES"/>
+    </entity>
+    <entity name="Source_detail" representedClassName="Source_detail" syncable="YES">
+        <attribute name="createdAt" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="sourceDetailId" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="sourceId" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="target_id" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="targetType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="updatedAt" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="source" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Source" syncable="YES"/>
+    </entity>
+    <entity name="Tags" representedClassName="Tags" syncable="YES">
+        <attribute name="createdAt" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="tag" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tagId" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="target_type" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="targetId" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="TripCities" representedClassName="TripCities" syncable="YES">
+        <attribute name="cityId" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="orderBy" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="tcId" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="tripId" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="TripFeatures" representedClassName="TripFeatures" syncable="YES">
+        <attribute name="cName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cValue" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="order_by" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="tfId" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="tripId" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <relationship name="trip" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Trips" inverseName="tripFeatures" inverseEntity="Trips" syncable="YES"/>
+    </entity>
+    <entity name="TripLandmarks" representedClassName="TripLandmarks" syncable="YES">
+        <attribute name="landmarkId" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="orderBy" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="tLId" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="tripId" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="Trips" representedClassName="Trips" syncable="YES">
+        <attribute name="createdAt" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="detail" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="extra" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tripId" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="tripType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="updatedAt" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="tripCity" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Cities" inverseName="trips" inverseEntity="Cities" syncable="YES"/>
+        <relationship name="tripFeatures" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="TripFeatures" inverseName="trip" inverseEntity="TripFeatures" syncable="YES"/>
+        <relationship name="tripLandmarks" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Landmarks" inverseName="trip" inverseEntity="Landmarks" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Asset" positionX="142" positionY="167" width="128" height="283"/>
+        <element name="AssetsDetail" positionX="430" positionY="191" width="128" height="133"/>
+        <element name="AssetType" positionX="387" positionY="368" width="128" height="133"/>
+        <element name="Cities" positionX="108" positionY="-315" width="128" height="223"/>
+        <element name="Countries" positionX="252" positionY="540" width="128" height="163"/>
+        <element name="DayDetail" positionX="-423" positionY="377" width="128" height="180"/>
+        <element name="Emergency" positionX="-90" positionY="306" width="128" height="163"/>
+        <element name="LandmarkPersonalityDetail" positionX="-252" positionY="125" width="171" height="118"/>
+        <element name="Landmarks" positionX="-423" positionY="11" width="128" height="328"/>
+        <element name="LandmarkType" positionX="-270" positionY="422" width="128" height="118"/>
+        <element name="Personality" positionX="-137" positionY="560" width="128" height="178"/>
+        <element name="PersonalityCharacteristics" positionX="0" positionY="-64" width="144" height="118"/>
+        <element name="Source" positionX="295" positionY="-148" width="128" height="193"/>
+        <element name="Source_detail" positionX="459" positionY="-22" width="128" height="148"/>
+        <element name="Tags" positionX="306" positionY="63" width="128" height="120"/>
+        <element name="TripCities" positionX="-81" positionY="-297" width="128" height="103"/>
+        <element name="TripFeatures" positionX="-423" positionY="-234" width="128" height="133"/>
+        <element name="TripLandmarks" positionX="286" positionY="-294" width="128" height="105"/>
+        <element name="Trips" positionX="-245" positionY="-318" width="128" height="208"/>
+    </elements>
+</model>

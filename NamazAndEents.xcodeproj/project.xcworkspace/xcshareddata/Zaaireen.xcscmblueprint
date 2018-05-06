@@ -1,0 +1,37 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "6ab8a376-d933-455c-9fb2-7d48989fcc90++1125",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "6ab8a376-d933-455c-9fb2-7d48989fcc90++1125" : {
+
+    },
+    "6ab8a376-d933-455c-9fb2-7d48989fcc90++3498" : {
+      "DVTSourceControlWorkingCopyRepositoryBranchesLocationKey" : "branches",
+      "DVTSourceControlWorkingCopyRepositoryTagsLocationKey" : "tags",
+      "DVTSourceControlWorkingCopyRepositoryPrimaryBranchLocationKey" : "trunk"
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "6ab8a376-d933-455c-9fb2-7d48989fcc90++1125" : 0,
+    "6ab8a376-d933-455c-9fb2-7d48989fcc90++3498" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "9EAA8D95-B362-472D-8C20-BE9B815BEF08",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "6ab8a376-d933-455c-9fb2-7d48989fcc90++1125" : "Zaaireen\/",
+    "6ab8a376-d933-455c-9fb2-7d48989fcc90++3498" : "..\/.."
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Zaaireen",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Zaaireen.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/202.142.175.163\/svn\/zaair",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "6ab8a376-d933-455c-9fb2-7d48989fcc90++1125"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/202.142.175.163\/svn\/zaair",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "6ab8a376-d933-455c-9fb2-7d48989fcc90++3498"
+    }
+  ]
+}
